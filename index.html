@@ -2,33 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Wood Interior | Premium Luxury Collection</title>
+    <title>Danish Wood Interior</title>
     <style>
-        /* Wood & Gold Theme */
-        body { margin: 0; font-family: 'Georgia', serif; background: #2b1f15; color: #e1c699; }
-        nav { position: sticky; top: 0; background: #1a120b; padding: 20px; text-align: center; border-bottom: 3px solid #b8860b; z-index: 1000; }
-        nav a { color: #d4af37; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-        
-        .hero { padding: 60px 20px; text-align: center; background: linear-gradient(rgba(43,31,21,0.9), rgba(43,31,21,0.9)), url('bed1.jpg'); background-size: cover; border-bottom: 5px solid #b8860b; }
-        h1 { font-size: 3em; color: #d4af37; margin: 0; text-shadow: 2px 2px 4px #000; }
-        
-        .section-box { padding: 40px 10px; }
-        .section-title { text-align: center; color: #d4af37; border-bottom: 1px solid #b8860b; display: inline-block; width: 100%; padding-bottom: 10px; margin-bottom: 20px; }
-        
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px; margin-bottom: 50px; }
-        .card { background: #3d2b1f; padding: 10px; border-radius: 5px; border: 1px solid #5d4037; }
-        .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 3px; border: 2px solid #b8860b; }
-        .card h4 { color: #d4af37; margin: 10px 0 5px 0; text-align: center; }
-
-        .footer { padding: 30px; text-align: center; background: #1a120b; border-top: 2px solid #b8860b; }
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #27a745; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        body { font-family: 'Georgia', serif; background: #2b1f15; color: #e1c699; margin: 0; }
+        nav { background: #1a120b; padding: 20px; text-align: center; border-bottom: 3px solid #b8860b; }
+        nav a { color: #d4af37; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+        .hero { padding: 60px 20px; text-align: center; border-bottom: 5px solid #b8860b; background: #3d2b1f; }
+        h1 { color: #d4af37; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; }
+        .card { background: #3d2b1f; padding: 15px; border: 1px solid #b8860b; text-align: center; }
+        .card img { width: 100%; height: 250px; object-fit: cover; border: 2px solid #b8860b; }
+        .card h4 { color: #d4af37; margin-top: 15px; }
+        .card p { font-size: 14px; color: #ccc; }
     </style>
 </head>
 <body>
 
 <nav>
-    <a href="#about">About</a>
     <a href="#bed">Bed</a>
     <a href="#almari">Almari</a>
     <a href="#wall">Wall</a>
@@ -37,29 +27,32 @@
 
 <div class="hero">
     <h1>DANISH WOOD INTERIOR</h1>
-    <p>Handcrafted Luxury for Your Home</p>
+    <p>Premium Luxury Handcrafted Woodwork</p>
 </div>
 
-<div id="about" style="padding: 40px; text-align: center;">
-    <img src="danish.jpg" alt="Danish Ali" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #d4af37; object-fit: cover;">
-    <h2>Danish Ali</h2>
-    <p style="max-width: 600px; margin: auto;">Professional wood craftsmanship bringing elegance to your spaces with traditional and modern designs.</p>
+<h2 style="text-align:center; color:#d4af37;" id="bed">Luxury Bed Collection</h2>
+<div class="gallery">
+    <div class="card"><img src="bed1.jpg"><h4>Royal Oak Bed</h4><p>Hand-carved solid oak wood with gold finish.</p></div>
+    <div class="card"><img src="bed2.jpg"><h4>Modern Minimalist</h4><p>Sleek design for a contemporary bedroom look.</p></div>
+    <div class="card"><img src="bed3.jpg"><h4>Classic Velvet Bed</h4><p>Premium velvet upholstery with wooden frame.</p></div>
 </div>
 
-<div class="section-box"><h2 class="section-title" id="bed">Luxury Bed Collection</h2><div class="gallery"><script>for(let i=1; i<=12; i++) document.write('<div class="card"><img src="bed'+i+'.jpg"><h4>Premium Bed '+i+'</h4></div>');</script></div></div>
+<h2 style="text-align:center; color:#d4af37;" id="almari">Almari Collection</h2>
+<div class="gallery">
+    <div class="card"><img src="almari1.jpg"><h4>Master Wardrobe</h4><p>Spacious sliding doors with premium handles.</p></div>
+    <div class="card"><img src="almari2.jpg"><h4>Classic Oak Closet</h4><p>Durable solid wood finish with deep storage.</p></div>
+</div>
 
-<div class="section-box"><h2 class="section-title" id="almari">Almari Collection</h2><div class="gallery"><script>for(let i=1; i<=7; i++) document.write('<div class="card"><img src="almari'+i+'.jpg"><h4>Elegant Wardrobe '+i+'</h4></div>');</script></div></div>
+<h2 style="text-align:center; color:#d4af37;" id="wall">Wall Works</h2>
+<div class="gallery">
+    <div class="card"><img src="wall1.jpg"><h4>Accent Feature Wall</h4><p>Custom wooden paneling for living rooms.</p></div>
+</div>
 
-<div class="section-box"><h2 class="section-title" id="wall">Wall Works</h2><div class="gallery"><script>for(let i=1; i<=3; i++) document.write('<div class="card"><img src="wall'+i+'.jpg"><h4>Wooden Wall '+i+'</h4></div>');</script></div></div>
-
-<div class="section-box"><h2 class="section-title" id="table">Table Collection</h2><div class="gallery"><script>for(let i=1; i<=7; i++) document.write('<div class="card"><img src="table'+i+'.jpg"><h4>Designer Table '+i+'</h4></div>');</script></div></div>
-
-<footer class="footer">
-    <p>Sir Syed Ahmed Road, Manzoor Colony, Karachi.</p>
-    <p>&copy; 2026 Danish Wood Interior</p>
-</footer>
-
-<a href="https://wa.me/923116661298" class="whatsapp-float">WhatsApp Us</a>
+<h2 style="text-align:center; color:#d4af37;" id="table">Table Collection</h2>
+<div class="gallery">
+    <div class="card"><img src="table1.jpg"><h4>Coffee Masterpiece</h4><p>Hand-polished center table for elegance.</p></div>
+    <div class="card"><img src="table2.jpg"><h4>Dining Elegance</h4><p>Luxury solid wood dining setup for 6.</p></div>
+</div>
 
 </body>
 </html>
