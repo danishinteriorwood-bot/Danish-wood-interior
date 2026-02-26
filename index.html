@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danish Wood Interior | Premium Luxury</title>
     <style>
-        /* White & Brown Theme */
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #4e342e; }
         
-        nav { position: sticky; top: 0; background: #ffffff; padding: 15px 20px; text-align: center; border-bottom: 2px solid #8d6e63; z-index: 1000; display: flex; align-items: center; justify-content: center; }
+        nav { position: sticky; top: 0; background: #ffffff; padding: 15px 20px; text-align: center; border-bottom: 2px solid #8d6e63; z-index: 1000; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
         .logo-img { height: 50px; margin-right: 15px; border-radius: 50%; border: 1px solid #8d6e63; }
-        nav a { color: #4e342e; margin: 0 12px; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; }
+        nav a { color: #4e342e; margin: 0 8px; text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 12px; }
         
-        .hero { padding: 80px 20px; text-align: center; background: #fdfaf6; border-bottom: 1px solid #d7ccc8; }
-        h1 { font-size: 3em; color: #3e2723; margin: 0; }
+        .hero { padding: 60px 20px; text-align: center; background: #fdfaf6; border-bottom: 1px solid #d7ccc8; }
+        h1 { font-size: 2.5em; color: #3e2723; margin: 0; }
         
-        .section-title { text-align: center; color: #5d4037; padding-top: 60px; text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 30px; }
-        .card { background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #d7ccc8; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 5px; }
-        .card h4 { margin: 15px 0 5px 0; color: #3e2723; }
-        .card p { font-size: 13px; color: #795548; }
+        .section-title { text-align: center; color: #5d4037; padding-top: 50px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: #fff; padding: 12px; border-radius: 8px; border: 1px solid #d7ccc8; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 5px; }
+        .card h4 { margin: 12px 0 5px 0; color: #3e2723; }
+        .card p { font-size: 12px; color: #795548; }
         
-        .about-section { background-color: #fdfaf6; padding: 60px 20px; text-align: center; border-top: 1px solid #d7ccc8; }
-        .footer { padding: 40px; text-align: center; background: #3e2723; color: #fff; }
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; z-index: 1000; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .about-section { background-color: #fdfaf6; padding: 50px 20px; text-align: center; border-top: 1px solid #d7ccc8; }
+        .footer { padding: 30px; text-align: center; background: #3e2723; color: #fff; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; z-index: 1000; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
     </style>
 </head>
 <body>
@@ -32,6 +31,7 @@
 <nav>
     <img src="Danishlogo.png" alt="Logo" class="logo-img">
     <a href="#bed">Bed</a>
+    <a href="#sofa">Sofa</a>
     <a href="#almari">Almari</a>
     <a href="#wall">Wall</a>
     <a href="#table">Table</a>
@@ -44,20 +44,23 @@
 </div>
 
 <h2 class="section-title" id="bed">Luxury Bed Collection</h2>
-<div class="gallery"><script>const b=["Royal Oak Bed","Modern Minimalist","Classic Velvet","King Size Master","Urban Style","Premium Walnut","Sleek Comfort","Heritage Design","Chic Bedroom","Nordic Frame","Grand Tufted","Signature Edition"];for(let i=1;i<=12;i++)document.write('<div class="card"><img src="bed'+i+'.jpg"><h4>'+b[i-1]+'</h4><p>Premium solid wood handcrafted bed.</p></div>');</script></div>
+<div class="gallery"><script>const b=["Royal Oak","Modern","Velvet","King Size","Urban","Walnut","Sleek","Heritage","Chic","Nordic","Tufted","Signature"];for(let i=1;i<=12;i++)document.write('<div class="card"><img src="bed'+i+'.jpg"><h4>'+b[i-1]+' Bed</h4><p>Premium handcrafted wood.</p></div>');</script></div>
+
+<h2 class="section-title" id="sofa">Sofa Collection</h2>
+<div class="gallery"><script>const s=["Royal Sofa","Modern Fabric","Classic Leather","L-Shape","Executive","Premium Design","Urban Comfort","Elite","Signature"];for(let i=1;i<=9;i++)document.write('<div class="card"><img src="sofa'+i+'.jpg"><h4>'+s[i-1]+' Sofa</h4><p>Custom comfort and elegance.</p></div>');</script></div>
 
 <h2 class="section-title" id="almari">Almari Collection</h2>
-<div class="gallery"><script>const a=["Master Wardrobe","Sliding Luxury","Classic Oak Almari","Intelligent Storage","Minimalist Closet","Premium Finish","Executive Almari"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="almari'+i+'.jpg"><h4>'+a[i-1]+'</h4><p>Spacious, durable, and elegant wardrobe.</p></div>');</script></div>
+<div class="gallery"><script>const a=["Master Wardrobe","Sliding","Classic Oak","Storage","Minimalist","Finish","Executive"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="almari'+i+'.jpg"><h4>'+a[i-1]+' Almari</h4><p>Spacious, durable, elegant.</p></div>');</script></div>
 
 <h2 class="section-title" id="wall">Wall Works</h2>
-<div class="gallery"><script>const w=["Accent Feature Wall","Wooden Paneling","Modern Textural Wall"];for(let i=1;i<=3;i++)document.write('<div class="card"><img src="wall'+i+'.jpg"><h4>'+w[i-1]+'</h4><p>Custom interior wooden wall art.</p></div>');</script></div>
+<div class="gallery"><script>const w=["Accent Wall","Paneling","Textural"];for(let i=1;i<=3;i++)document.write('<div class="card"><img src="wall'+i+'.jpg"><h4>'+w[i-1]+'</h4><p>Custom wooden wall art.</p></div>');</script></div>
 
 <h2 class="section-title" id="table">Table Collection</h2>
-<div class="gallery"><script>const t=["Coffee Masterpiece","Dining Elegance","Modern Side Table","Luxury Console","Classic Center Table","Urban Dining","Signature Table"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="table'+i+'.jpg"><h4>'+t[i-1]+'</h4><p>Solid wood premium table.</p></div>');</script></div>
+<div class="gallery"><script>const t=["Coffee Table","Dining","Side Table","Console","Center","Dining Urban","Signature"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="table'+i+'.jpg"><h4>'+t[i-1]+'</h4><p>Solid wood premium table.</p></div>');</script></div>
 
 <div id="about" class="about-section">
     <h2 style="color: #3e2723;">About Danish Wood Interior</h2>
-    <img src="danish.jpg" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #8d6e63;">
+    <img src="danish.jpg" style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid #8d6e63;">
     <p style="max-width: 600px; margin: 20px auto; color: #5d4037;">Led by Danish Ali, we bring tradition and modern craftsmanship together to define your space.</p>
 </div>
 
