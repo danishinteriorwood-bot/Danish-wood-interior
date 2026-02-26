@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Wood Interior</title>
+    <title>Danish Wood Interior | Premium Luxury</title>
     <style>
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fdfaf6; color: #3e2723; }
         nav { position: sticky; top: 0; background: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #8d6e63; z-index: 1000; }
         .logo { height: 50px; vertical-align: middle; margin-right: 15px; }
-        nav a { color: #3e2723; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 12px; }
-        
+        nav a { color: #3e2723; margin: 0 8px; text-decoration: none; font-weight: bold; font-size: 11px; text-transform: uppercase; }
+        .hero { padding: 60px 20px; text-align: center; background: #fdfaf6; border-bottom: 1px solid #d7ccc8; }
         .section-title { text-align: center; color: #5d4037; padding: 40px 0 20px 0; text-transform: uppercase; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 15px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 0 15px; }
         .card { background: #fff; padding: 10px; border: 1px solid #d7ccc8; border-radius: 8px; }
-        /* Image ko pura dikhane ke liye contain use kiya hai */
-        .card img { width: 100%; height: 300px; object-fit: contain; background: #f9f9f9; }
-        
+        .card img { width: 100%; height: 280px; object-fit: contain; background: #f9f9f9; }
         .footer { padding: 40px; text-align: center; background: #3e2723; color: #fff; margin-top: 50px; }
         .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; }
     </style>
@@ -24,20 +22,37 @@
 
 <nav>
     <img src="Danishlogo.png" class="logo">
-    <a href="#bed">BED</a> <a href="#sofa">SOFA</a> <a href="#almari">ALMARI</a> <a href="#wall">WALL</a> <a href="#table">TABLE</a>
+    <a href="#bed">BED</a> <a href="#sofa">SOFA</a> <a href="#almari">ALMARI</a> <a href="#dining">DINING</a> <a href="#wall">WALL</a> <a href="#table">TABLE</a> <a href="#about">ABOUT</a>
 </nav>
 
+<div class="hero">
+    <h1>DANISH WOOD INTERIOR</h1>
+    <p>Premium Handcrafted Luxury Woodwork</p>
+</div>
+
 <h2 class="section-title" id="bed">Luxury Bed Collection</h2>
-<div class="gallery"><script>for(let i=1;i<=12;i++)document.write('<div class="card"><img src="bed'+i+'.jpg"><h4>Bed Model '+i+'</h4></div>');</script></div>
+<div class="gallery"><script>const b=["Royal Oak Bed","Modern Minimalist","Classic Velvet","King Size Master","Urban Style","Premium Walnut","Sleek Comfort","Heritage Design","Chic Bedroom","Nordic Frame","Grand Tufted","Signature Edition"];for(let i=1;i<=12;i++)document.write('<div class="card"><img src="bed'+i+'.jpg"><h4>'+b[i-1]+'</h4><p>Premium handcrafted solid wood bed for ultimate comfort.</p></div>');</script></div>
 
 <h2 class="section-title" id="sofa">Sofa Collection</h2>
-<div class="gallery"><script>for(let i=1;i<=9;i++)document.write('<div class="card"><img src="sofa'+i+'.jpg"><h4>Sofa Model '+i+'</h4></div>');</script></div>
+<div class="gallery"><script>const s=["Royal Sofa","Modern Fabric","Classic Leather","L-Shape Luxury","Executive","Premium Design","Urban Comfort","Elite Style","Signature"];for(let i=1;i<=9;i++)document.write('<div class="card"><img src="sofa'+i+'.jpg"><h4>'+s[i-1]+'</h4><p>Customized elegant sofa set with high-quality fabric.</p></div>');</script></div>
 
 <h2 class="section-title" id="almari">Almari Collection</h2>
-<div class="gallery"><script>for(let i=1;i<=7;i++)document.write('<div class="card"><img src="almari'+i+'.jpg"><h4>Almari Model '+i+'</h4></div>');</script></div>
+<div class="gallery"><script>const a=["Master Wardrobe","Sliding Luxury","Classic Oak","Intelligent Storage","Minimalist Closet","Premium Finish","Executive Almari"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="almari'+i+'.jpg"><h4>'+a[i-1]+'</h4><p>Spacious and highly durable custom wardrobe.</p></div>');</script></div>
+
+<h2 class="section-title" id="dining">Dining Collection</h2>
+<div class="gallery"><script>const d=["Royal Dining","Classic Wood","Modern Family","Premium Setup"];for(let i=1;i<=4;i++)document.write('<div class="card"><img src="dining'+i+'.jpg"><h4>'+d[i-1]+'</h4><p>Elegant dining setup for luxury homes.</p></div>');</script></div>
 
 <h2 class="section-title" id="table">Table Collection</h2>
-<div class="gallery"><script>for(let i=1;i<=7;i++)document.write('<div class="card"><img src="table'+i+'.jpg"><h4>Table Model '+i+'</h4></div>');</script></div>
+<div class="gallery"><script>const t=["Coffee Masterpiece","Dining Elegance","Modern Side","Luxury Console","Classic Center","Urban Dining","Signature"];for(let i=1;i<=7;i++)document.write('<div class="card"><img src="table'+i+'.jpg"><h4>'+t[i-1]+'</h4><p>Premium quality solid wood table design.</p></div>');</script></div>
+
+<h2 class="section-title" id="wall">Wall Works</h2>
+<div class="gallery"><script>const w=["Accent Wall","Wooden Paneling","Modern Wall"];for(let i=1;i<=3;i++)document.write('<div class="card"><img src="wall'+i+'.jpg"><h4>'+w[i-1]+'</h4><p>Transform your interior with custom wood paneling.</p></div>');</script></div>
+
+<div id="about" style="padding: 60px 20px; text-align: center; background: #fdfaf6;">
+    <h2 style="color: #3e2723;">About Danish Wood Interior</h2>
+    <img src="danish.jpg" style="width: 150px; height: 150px; border-radius: 50%;">
+    <p style="max-width: 600px; margin: 20px auto;">Led by Danish Ali, our workshop bridges the gap between timeless tradition and contemporary aesthetics. We preserve a legacy of excellence.</p>
+</div>
 
 <footer class="footer">
     <p>Sir Syed Ahmed Road, Manzoor Colony, Karachi.</p>
